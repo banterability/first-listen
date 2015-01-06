@@ -1,0 +1,8 @@
+{
+  "twitter": {
+    "access_token_key": "aaa",
+    "access_token_secret": "sss",
+    "consumer_key": "ddd",
+    "consumer_secret": "fff"
+  }
+}
