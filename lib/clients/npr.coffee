@@ -8,9 +8,11 @@ module.exports = ({apiKey}, callback) ->
     url: "http://api.npr.org/query"
     json: true
     qs:
-      id: 98679384
       apiKey: apiKey
+      id: 98679384
       output: 'json'
+      sort: 'dateDesc'
+      numResults: 20
 
   request.get requestOptions, (err, res, body) ->
     return callback err, null if err?

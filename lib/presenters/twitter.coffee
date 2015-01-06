@@ -4,5 +4,4 @@ class TweetPresenter
   present: ->
     "♫ #{@context.title}: #{@context.link}"
 
-
 module.exports = TweetPresenter
