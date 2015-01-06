@@ -1,0 +1,14 @@
+{
+  "name": "first-listen",
+  "version": "0.1.0",
+  "description": "Twitter alerts for new First Listens from NPR Music",
+  "private": true,
+  "main": "index.coffee",
+  "author": "Jeff Long",
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.33.0",
+    "twitter": "~0.2.5",
+    "underscore": "~1.5.2"
+  }
+}
