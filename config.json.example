@@ -1,4 +1,7 @@
 {
+  "npr": {
+    "apiKey": "jjj"
+  },
   "twitter": {
     "access_token_key": "aaa",
     "access_token_secret": "sss",
