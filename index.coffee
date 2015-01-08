@@ -1,6 +1,7 @@
-{getConfigOrDie} = require './lib/config'
 fetchAlbums = require './lib/clients/npr'
+{getConfigOrDie} = require './lib/config'
 sendTweet = require './lib/clients/twitter'
+store = require './lib/store'
 StoryPresenter = require './lib/presenters/npr'
 TweetPresenter = require './lib/presenters/twitter'
 
