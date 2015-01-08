@@ -12,7 +12,11 @@ class StoryPresenter
     bestMatch = find [buildTitleFromSong, buildTitleFromProduct, buildTitleFromTitle], (func) => func(@story)
     bestMatch(@story)
 
+  getId: ->
+    @story.id
+
   present: ->
+    id: @getId()
     link: @getShortLink()
     title: @getTitle()
 
