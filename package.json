@@ -6,7 +6,11 @@
   "main": "index.coffee",
   "author": "Jeff Long",
   "license": "MIT",
+  "scripts": {
+    "start": "coffee index.coffee"
+  },
   "dependencies": {
+    "coffee-script": "^1.8.0",
     "redis": "^0.12.1",
     "request": "~2.33.0",
     "twitter": "~0.2.5",
