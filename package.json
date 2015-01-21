@@ -10,6 +10,7 @@
     "start": "coffee index.coffee"
   },
   "dependencies": {
+    "async": "^0.9.0",
     "coffee-script": "^1.8.0",
     "redis": "^0.12.1",
     "request": "~2.33.0",
