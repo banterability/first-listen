@@ -11,6 +11,9 @@ class StoryPresenter
       link.type == "short"
     shortLink.$text
 
+  getPubDate: ->
+    new Date @story.pubDate.$text
+
   getTitle: ->
     bestMatch = find [@_buildTitleFromProduct, @_buildTitleFromSong, @_buildTitleFromTitle], (func) -> func()
     bestMatch()
@@ -18,6 +21,7 @@ class StoryPresenter
   present: ->
     id: @getId()
     link: @getShortLink()
+    pubDate: @getPubDate()
     title: @getTitle()
 
   # First option (from Amazon/iTunes/etc links)

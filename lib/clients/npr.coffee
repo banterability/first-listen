@@ -16,5 +16,4 @@ module.exports = ({apiKey}, callback) ->
 
   request.get requestOptions, (err, res, body) ->
     return callback err, null if err?
-
     callback null, body.list.story
