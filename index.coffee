@@ -8,6 +8,8 @@ TweetPresenter = require './lib/presenters/twitter'
 
 config = getConfigOrDie()
 
+console.log "\n\n------ start run: #{new Date} ------"
+
 fetchAlbums config.npr, (err, data) ->
   throw err if err?
   stories = data.map (storyData) -> new StoryPresenter(storyData).present()
